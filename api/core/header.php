@@ -13,7 +13,7 @@ echo '
     <div class="header">
         <ul>
             <li><a href="aluno/consulta_aluno.php">Alunos</a></li>
-            <li><a href="../professor/consulta_professor.php">Professor</a></li>
+            <li><a href="professor/consulta_professor.php">Professor</a></li>
         </ul>
     </div>
 
