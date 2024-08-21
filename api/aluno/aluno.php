@@ -1,5 +1,5 @@
 <?php
-require_once("header.php");
+require_once("../core/header.php");
 
 function getDadosAluno($codigoAlunoAlterar){
     $nome = "";
@@ -56,7 +56,7 @@ if(isset($_GET["ACAO"])){
     }
 }
 
-$sHTML = '<div> <link rel="stylesheet" href="css/formulario.css">';
+$sHTML = '<div> <link rel="stylesheet" href="../css/formulario.css">';
 
 // FORMULARIO DE CADASTRO DE ALUNOS
 $sHTML .= '<h2 style="text-align:center;">Formulário de Aluno</h2>
@@ -88,4 +88,4 @@ $sHTML .= '<h2 style="text-align:center;">Consulta de Aluno</h2>
 
 echo $sHTML;
 
-require_once("footer.php");
+require_once("../core/footer.php");

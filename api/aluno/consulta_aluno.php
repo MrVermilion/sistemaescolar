@@ -1,18 +1,18 @@
 <?php
 
 function getAcaoExcluirAluno($codigoAluno){
-    $sHTML = "<a id='acaoExcluir' href='http://localhost/sistemaescolar/api/cadastrar_aluno.php?ACAO=EXCLUIR&codigo=" . $codigoAluno . "'>Excluir</a>";
+    $sHTML = "<a id='acaoExcluir' href='http://localhost/sistemaescolar/api/aluno/cadastrar_aluno.php?ACAO=EXCLUIR&codigo=" . $codigoAluno . "'>Excluir</a>";
 
     return $sHTML;
 }
 
 function getAcaoAlterarAluno($codigoAluno){
-    $sHTML = "<a id='acaoAlterar' href='http://localhost/sistemaescolar/api/cadastrar_aluno.php?ACAO=ALTERAR&codigo=" . $codigoAluno . "'>Alterar</a>";
+    $sHTML = "<a id='acaoAlterar' href='http://localhost/sistemaescolar/api/aluno/cadastrar_aluno.php?ACAO=ALTERAR&codigo=" . $codigoAluno . "'>Alterar</a>";
 
     return $sHTML;
 }
 
-require_once("header.php");
+require_once("../core/header.php");
 
 echo '<h3 style="text-align:center;">CONSULTA DE ALUNO</h3>';
 
@@ -97,4 +97,4 @@ $htmlTabelaAlunos .= "</table>";
 
 echo $htmlTabelaAlunos;
 
-require_once("footer.php");
+require_once("../core/footer.php");
